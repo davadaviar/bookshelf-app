@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Bookshelf Submission</title>
+</head>
+<body>
+    <header class="head-title">
+        <h1>Bookshelf Apps</h1>
+    </header>
+
+    <main>
+        <div id="content">
+            <section class="search-book card">
+                <h2>Cari Buku</h2>
+                <form>
+                    <div class="search-input">
+                        <input id="searchBookTitle" type="text" placeholder="Masukkan judul buku">
+                        <button id="searchBookSubmit" type="button">Cari</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="add-book-list card">
+                <h2>Masukkan Data Buku</h2>
+                <form id="inputBook">
+                    <div class="input">
+                        <label for="inputBookTitle">Judul</label>
+                        <input id="inputBookTitle" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookAuthor">Penulis</label>
+                        <input id="inputBookAuthor" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookYear">Tahun</label>
+                        <input id="inputBookYear" type="number" required>
+                    </div>
+                    <div class="input-inline">
+                        <label for="inputBookTitle">Selesai dibaca</label>
+                        <input id="inputBookIsComplete" type="checkbox">
+                    </div>
+                    <button id="bookSubmit" type="submit">Tambahkan</button>
+                </form>
+            </section>
+            
+            <section class="book-shelf card">
+                <h2>Buku Belum Dibaca</h2>
+                <div id="incompleteBookShelfList" class="book-list"></div>
+            </section>
+    
+            <section class="book-shelf card">
+                <h2>Buku Selesai Dibaca</h2>
+                <div id="completeBookShelfList" class="book-list"></div>
+            </section>
+        </div>
+
+        <aside>
+            <article>
+                <div class="profile card">
+                    <section>
+                        <figure>
+                            <img src="assets/images/profile.png" alt="profile">
+                        </figure>
+                    </section>
+
+                    <section>
+                        <h2>Halo, Dava !</h2>
+                        <p>Semoga harimu menyenangkan, selesaikan baca bukumu hari ini dan baca buku menarik lainnya...</p>
+                    </section>
+                </div>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Bookshelf Apps | Allright reserved by Dava Daviar 2022</p>
+    </footer>
+    
+    <script src="assets/main.js" type="text/javascript"></script>
+</body>
+</html>
